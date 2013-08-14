@@ -8,25 +8,26 @@ I use this for aligning stuff to the mitochondrial genome using bl2seq but it co
 
 A mitochondrial BLAST index and a sample config file are provided.
 
-Usage:
+Usage
+-----
 
-From github:
+### From github:
 ```
 git clone git@github.com:leipzig/blast-wrapper.git
 cd blast-wrapper
 npm start
 ```
 
-From npm:
+### From npm:
 ```
 npm install blast-wrapper
 npm blast-wrapper start
 ```
 
-To access:
+### To access:
 `http://localhost:8080/?name=mysequence&seq=TGGTCAACCTCGACCTAGGCCTCCTATTTATTCTAGCCACCG`
 
-Result:
+### Result:
 ```
 Query= mysequence
          (42 letters)
