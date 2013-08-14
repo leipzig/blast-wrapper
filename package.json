@@ -1,5 +1,5 @@
 {
-  "name": "nodeblast",
+  "name": "blastwrapper",
   "version": "0.0.1",
   "description": "wrapper for bl2seq from BLAST (not BLAST+)",
   "main": "nodeblast.js",
