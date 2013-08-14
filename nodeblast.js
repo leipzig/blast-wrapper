@@ -5,7 +5,7 @@ var url = require('url');
 var config = require('./bl2seq.cfg.json');
 
 //this is a node.js wrapper for bl2seq
-//an 
+
 //boilerplate code from http://nodejs.org/
 http.createServer(function (req, res) {
 	res.writeHead(200, {'Content-Type': 'text/plain'});
