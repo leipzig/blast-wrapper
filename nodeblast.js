@@ -2,7 +2,7 @@ var http = require('http');
 var url = require('url');
 
 //load bl2seq config
-var config = require('./bl2seq.cfg.json').bl2seq;
+var config = require('./bl2seq.cfg.json');
 
 //this is a node.js wrapper for bl2seq
 //an 
@@ -25,9 +25,9 @@ function blastSeq(config,queryPath,browser){
 
     //build the blast command and evaluate in bash to allow
     //for process substitution so we are not creating temp files
-    var blastCmd="/bin/bash -c '/usr/local/bin/bl2seq";
-    for (var i = 0; i < config.length; i++) {
-	blastCmd += " "+config[i].argument+" "+config[i].value;
+    var blastCmd="/bin/bash -c '"+config.executable+" -i <(echo -e \""+queryPath+"\")";
+    for (var i = 0; i < config.params.length; i++) {
+	blastCmd += " "+config.params[i].argument+" "+config.params[i].value;
     }
     blastCmd += "'"
 	console.log(blastCmd);

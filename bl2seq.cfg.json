@@ -1,14 +1,10 @@
 {
-    "bl2seq": [
+    "executable":"/usr/local/bin/bl2seq",
+    "params": [
         {
             "argument": "-p",
             "value": "blastn",
             "description": "program"
-        },
-        {
-            "argument": "-i",
-            "value": "<(echo -e \"'+queryPath+'\")",
-            "description": "STDIN as input file"
         },
         {
             "argument": "-j",
