@@ -1,10 +1,10 @@
 blast-wrapper
 =============
-a node.js web-service wrapper for old BLAST executables (not BLAST+), specifically bl2seq.
+blast-wrapper is a a node.js web-service wrapper for old BLAST executables (not BLAST+), specifically bl2seq.
 
 In theory this should be faster than a CGI wrapper.
 
-I use this for aligning stuff to the mitochondrial genome using bl2seq but it could be modified to use blastall with a few tweaks.
+I use this for aligning sequences to the mitochondrial genome using bl2seq but it could be modified to use blastall with a few tweaks.
 
 A mitochondrial BLAST index and a sample config file are provided.
 
