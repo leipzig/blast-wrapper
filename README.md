@@ -1,6 +1,6 @@
 blast-wrapper
 =============
-blast-wrapper is a a node.js web-service wrapper for old BLAST executables (not BLAST+), specifically bl2seq.
+blast-wrapper is a node.js web-service wrapper for old BLAST executables (not BLAST+), specifically bl2seq.
 
 In theory this should be faster than a CGI wrapper.
 
