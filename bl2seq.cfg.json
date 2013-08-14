@@ -8,7 +8,7 @@
         },
         {
             "argument": "-j",
-            "value": "/var/www/html/mitomaster/blastdb/rCRS.fasta",
+            "value": "./blastdb/rCRS.fasta",
             "description": "reference"
         },
         {

@@ -22,7 +22,8 @@ http.createServer(function (req, res) {
 
 //call bl2seq and print default format straight to browser
 function blastSeq(config,queryPath,browser){
-
+    //config.executable is the path to bl2seq
+    //though it could be blastall with some tweaks
     //build the blast command and evaluate in bash to allow
     //for process substitution so we are not creating temp files
     var blastCmd="/bin/bash -c '"+config.executable+" -i <(echo -e \""+queryPath+"\")";
@@ -30,7 +31,7 @@ function blastSeq(config,queryPath,browser){
 	blastCmd += " "+config.params[i].argument+" "+config.params[i].value;
     }
     blastCmd += "'"
-	console.log(blastCmd);
+
     //http://nodejs.org/api/child_process.html
     var childProcess = require('child_process');
     blast = childProcess.exec(blastCmd, function (error, stdout, stderr) {
