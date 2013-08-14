@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "wrapper for bl2seq from BLAST (not BLAST+)",
   "main": "nodeblast.js",
-  "scripts": {"start": "node server.js"}
+  "scripts": {"start": "node server.js"},
   "repository": {
     "type": "git",
     "url": "https://github.com/leipzig/blast-wrapper"
