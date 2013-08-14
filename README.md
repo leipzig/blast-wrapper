@@ -10,9 +10,21 @@ A mitochondrial BLAST index and a sample config file are provided.
 
 Usage:
 
-`node server.js`
+From github:
+```
+git clone git@github.com:leipzig/blast-wrapper.git
+cd blast-wrapper
+npm start
+```
 
-`http://myserver:8080/?name=mysequence&seq=TGGTCAACCTCGACCTAGGCCTCCTATTTATTCTAGCCACCG`
+From npm:
+```
+npm install blast-wrapper
+npm blast-wrapper start
+```
+
+To access:
+`http://localhost:8080/?name=mysequence&seq=TGGTCAACCTCGACCTAGGCCTCCTATTTATTCTAGCCACCG`
 
 Result:
 ```
