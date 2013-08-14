@@ -1,5 +1,5 @@
 {
-    "executable":"/usr/local/bin/bl2seq",
+    "executable":"bl2seq",
     "params": [
         {
             "argument": "-p",

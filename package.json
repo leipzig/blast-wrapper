@@ -6,14 +6,15 @@
   "scripts": {"start": "node server.js"}
   "repository": {
     "type": "git",
-    "url": "https://github.com/leipzig/nodeblast"
+    "url": "https://github.com/leipzig/blast-wrapper"
   },
   "keywords": [
-    "bioinformatics"
+    "bioinformatics",
+    "blast"
   ],
-  "author": "Jeremy Leipzig",
+  "author": "Jeremy Leipzig <leipzig@gmail.com> (http://jermdemo.blogspot.com)",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/leipzig/nodeblast/issues"
+    "url": "https://github.com/leipzig/blast-wrapper/issues"
   }
 }

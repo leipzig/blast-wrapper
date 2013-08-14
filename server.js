@@ -2,7 +2,8 @@ var http = require('http');
 var url = require('url');
 
 //load bl2seq config
-var config = require('./bl2seq.cfg.json');
+var baseDir = process.cwd();
+var config = require(baseDir + '/config.json');
 
 //this is a node.js wrapper for bl2seq
 
