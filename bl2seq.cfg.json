@@ -1,0 +1,64 @@
+{
+    "bl2seq": [
+        {
+            "argument": "-p",
+            "value": "blastn",
+            "description": "program"
+        },
+        {
+            "argument": "-i",
+            "value": "<(echo -e \"'+queryPath+'\")",
+            "description": "STDIN as input file"
+        },
+        {
+            "argument": "-j",
+            "value": "/var/www/html/mitomaster/blastdb/rCRS.fasta",
+            "description": "reference"
+        },
+        {
+            "argument": "-F",
+            "value": "F",
+            "description": "filter query sequence"
+        },
+        {
+            "argument": "-e",
+            "value": "1",
+            "description": "expectation value"
+        },
+        {
+            "argument": "-r",
+            "value": "1",
+            "description": "match reward"
+        },
+        {
+            "argument": "-q",
+            "value": "-2",
+            "description": "mismatch penalty"
+        },
+        {
+            "argument": "-E",
+            "value": "-1",
+            "description": "gap extension penalty"
+        },
+        {
+            "argument": "-G",
+            "value": "-1",
+            "description": "gap open penalty"
+        },
+        {
+            "argument": "-X",
+            "value": "50",
+            "description": "dropoff value for gapped alignments in bits"
+        },
+        {
+            "argument": "-W",
+            "value": "28",
+            "description": "word size"
+        },
+        {
+            "argument": "-m",
+            "value": "T",
+            "description": "use megablast for search http://gordonlab.wustl.edu/btheta/blast/docs/megablast_readme.html"
+        }
+    ]
+}
