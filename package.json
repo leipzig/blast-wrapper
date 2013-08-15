@@ -1,6 +1,6 @@
 {
   "name": "blast-wrapper",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "wrapper for bl2seq from BLAST (not BLAST+)",
   "main": "nodeblast.js",
   "scripts": {"start": "node server.js"},
