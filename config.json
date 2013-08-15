@@ -7,7 +7,7 @@
             "description": "program"
         },
         {
-            "argument": "-j",
+            "argument": "-i",
             "value": "./blastdb/rCRS.fasta",
             "description": "reference"
         },
