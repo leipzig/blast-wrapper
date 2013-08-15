@@ -12,7 +12,6 @@ http.createServer(function(req, res) {
 
     var queryData = '';
     if (req.method == 'POST') {
-        console.log("POST");
         var body = '';
         req.on('data', function(data) {
             body += data;
@@ -29,9 +28,10 @@ http.createServer(function(req, res) {
             validate(queryData, res);
         });
     } else {
-        console.log("GET");
-        queryData = url.parse(req.url, true).query;
-        validate(queryData, res);
+        req.on('end', function() {
+            queryData = url.parse(req.url, true).query;
+            validate(queryData, res);
+        });
     }
 }).listen(8080);
 
@@ -46,14 +46,14 @@ function validate(queryData, res) {
         if (queryData.seq.match(re)) {
             blastSeq('>' + queryData.name + '\\n' + queryData.seq + '\\n', res);
         } else {
-            contentError(res,"Invalid sequence\n");
+            contentError("Invalid sequence\n", res);
         }
     } else {
-        contentError(res,"No seq argument\n");
+        contentError("No seq argument\n", res);
     }
 }
 
-function contentError(res,errorstr) {
+function contentError(errorstr, res) {
     res.writeHead(400, {
         'Content-Type': 'text/plain'
     });
@@ -61,6 +61,8 @@ function contentError(res,errorstr) {
 }
 
 //call blast and print default format straight to browser
+
+
 function blastSeq(queryPath, res) {
     //config.executable is the path to bl2seq
     //though it could be blastall with some tweaks
@@ -76,7 +78,7 @@ function blastSeq(queryPath, res) {
     var childProcess = require('child_process');
     blast = childProcess.exec(blastCmd, function(error, stdout, stderr) {
         if (error) {
-            contentError(error.stack);
+            contentError(error.stack, res);
             res.writeHead(400, {
                 'Content-Type': 'text/plain'
             });
