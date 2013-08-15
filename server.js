@@ -33,7 +33,7 @@ http.createServer(function(req, res) {
             validate(queryData, res);
         });
     }
-}).listen(8080);
+}).listen(config.port);
 
 //the sequence is required, the name isn't
 
