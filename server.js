@@ -28,10 +28,8 @@ http.createServer(function(req, res) {
             validate(queryData, res);
         });
     } else {
-        req.on('end', function() {
-            queryData = url.parse(req.url, true).query;
-            validate(queryData, res);
-        });
+        queryData = url.parse(req.url, true).query;
+        validate(queryData, res);
     }
 }).listen(config.port);
 
@@ -43,7 +41,7 @@ function validate(queryData, res) {
             queryData.name = "sequence";
         }
         var re = /^[A-Za-z]+$/;
-        if (queryData.seq.match(re)) {
+        if (typeof queryData.seq == 'string' && queryData.seq.match(re)) {
             blastSeq('>' + queryData.name + '\\n' + queryData.seq + '\\n', res);
         } else {
             contentError("Invalid sequence\n", res);

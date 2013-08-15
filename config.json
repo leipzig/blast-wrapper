@@ -1,6 +1,8 @@
 {
     "executable":"bl2seq",
-	"port":8080,
+
+    "port":8080,
+    
     "params": [
         {
             "argument": "-p",
