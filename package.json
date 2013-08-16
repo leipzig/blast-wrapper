@@ -1,6 +1,6 @@
 {
   "name": "blast-wrapper",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "wrapper for pairwise BLAST",
   "main": "nodeblast.js",
   "scripts": {"start": "node server.js"},
