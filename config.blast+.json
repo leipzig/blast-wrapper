@@ -39,8 +39,8 @@
 		"description": "word size"
 	}, {
 		"argument": "-use_index",
-		"value": "true",
-		"description": "Use MegaBLAST database index. Indices may be created with the makembindex application."
+		"value": "false",
+		"description": "Use MegaBLAST database index. Indices may be created with the makembindex application. makembindex -input blastdb/rCRS.fasta -output blastdb/rCRS"
 	}, {
 		"argument": "-index_name",
 		"value": "./blastdb/rCRS.megablast.index.00.idx",
