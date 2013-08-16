@@ -66,7 +66,7 @@ function blastSeq(queryPath, res) {
     //though it could be blastall with some tweaks
     //build the blast command and evaluate in bash to allow
     //for process substitution so we are not creating temp files
-    var blastCmd = "/bin/bash -c '" + config.executable + " -j <(echo -e \"" + queryPath + "\")";
+    var blastCmd = "/bin/bash -c '" + config.executable + " " + config.queryarg + " <(echo -e \"" + queryPath + "\")";
     for (var i = 0; i < config.params.length; i++) {
         blastCmd += " " + config.params[i].argument + " " + config.params[i].value;
     }
