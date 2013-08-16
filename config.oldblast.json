@@ -1,0 +1,55 @@
+{
+	"executable": "bl2seq",
+
+	"queryarg": "-j",
+
+	"port": 8080,
+
+	"params": [{
+		"argument": "-p",
+		"value": "blastn",
+		"description": "program"
+	}, {
+		"argument": "-i",
+		"value": "./blastdb/rCRS.fasta",
+		"description": "reference"
+	}, {
+		"argument": "-F",
+		"value": "F",
+		"description": "filter query sequence"
+	}, {
+		"argument": "-e",
+		"value": "1",
+		"description": "expectation value"
+	}, {
+		"argument": "-r",
+		"value": "1",
+		"description": "match reward"
+	}, {
+		"argument": "-q",
+		"value": "-5",
+		"description": "mismatch penalty"
+	}, {
+		"argument": "-G",
+		"value": "5",
+		"description": "gap open penalty"
+	}, {
+		"argument": "-E",
+		"value": "0",
+		"description": "gap extension penalty"
+	},
+
+	{
+		"argument": "-X",
+		"value": "50",
+		"description": "dropoff value for gapped alignments in bits"
+	}, {
+		"argument": "-W",
+		"value": "28",
+		"description": "word size"
+	}, {
+		"argument": "-m",
+		"value": "T",
+		"description": "use megablast for search http://gordonlab.wustl.edu/btheta/blast/docs/megablast_readme.html"
+	}]
+}

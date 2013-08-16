@@ -1,0 +1,49 @@
+{
+	"executable": "blastn",
+
+	"queryarg": "-query",
+
+	"port": 8080,
+
+	"params": [{
+		"argument": "-subject",
+		"value": "./blastdb/rCRS.fasta",
+		"description": "reference"
+	}, {
+		"argument": "-task",
+		"value": "megablast",
+		"description": "This option sets the parameters (e.g., word-size or gap values) to typical values for a specific type of search"
+	}, {
+		"argument": "-evalue",
+		"value": "1",
+		"description": "expectation value"
+	}, {
+		"argument": "-reward",
+		"value": "1",
+		"description": "match reward"
+	}, {
+		"argument": "-penalty",
+		"value": "-5",
+		"description": "mismatch penalty"
+	}, {
+		"argument": "-gapopen",
+		"value": "5",
+		"description": "gap open penalty"
+	}, {
+		"argument": "-gapextend",
+		"value": "3",
+		"description": "gap extension penalty"
+	}, {
+		"argument": "-word_size",
+		"value": "28",
+		"description": "word size"
+	}, {
+		"argument": "-use_index",
+		"value": "true",
+		"description": "Use MegaBLAST database index. Indices may be created with the makembindex application."
+	}, {
+		"argument": "-index_name",
+		"value": "./blastdb/rCRS.megablast.index.00.idx",
+		"description": "MegaBLAST database index name"
+	}]
+}
