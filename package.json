@@ -2,7 +2,7 @@
   "name": "blast-wrapper",
   "version": "0.0.4",
   "description": "wrapper for pairwise BLAST",
-  "main": "nodeblast.js",
+  "main": "server.js",
   "scripts": {"start": "node server.js"},
   "repository": {
     "type": "git",

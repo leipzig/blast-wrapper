@@ -35,11 +35,9 @@
 		"description": "gap open penalty"
 	}, {
 		"argument": "-E",
-		"value": "0",
+		"value": "3",
 		"description": "gap extension penalty"
-	},
-
-	{
+	},{
 		"argument": "-X",
 		"value": "50",
 		"description": "dropoff value for gapped alignments in bits"

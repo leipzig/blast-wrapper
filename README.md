@@ -27,6 +27,8 @@ npm blast-wrapper start
 ### To access:
 `http://localhost:8080/?name=mysequence&seq=TGGTCAACCTCGACCTAGGCCTCCTATTTATTCTAGCCACCG`
 
+The service also accepts POST queries.
+
 ### Result:
 ```
 BLASTN 2.2.28+
