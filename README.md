@@ -70,4 +70,4 @@ Matrix: blastn matrix 1 -5
 Gap Penalties: Existence: 5, Extension: 3
 ```
 
-If you looking for support for dictionary BLAST checkout the bionode package https://github.com/bionode/bionode-blast
+If you're looking dictionary BLAST support, checkout the bionode package https://github.com/bionode/bionode-blast
