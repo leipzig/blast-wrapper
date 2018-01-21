@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "description": "wrapper for pairwise BLAST",
   "main": "server.js",
-  "scripts": {"start": "node server.js"},
+  "scripts": {"start": "node server.js","test": "node server.js"},
   "repository": {
     "type": "git",
     "url": "https://github.com/leipzig/blast-wrapper"
