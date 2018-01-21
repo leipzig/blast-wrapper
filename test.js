@@ -2,7 +2,7 @@ var assert = require('assert'),
     http = require('http');
 
 describe('/', function () {
-  it('should return 200', function (done) {
+  it('should return 400', function (done) {
     http.get('http://localhost:8080/?name=mysequence', function (res) {
       assert.equal(400, res.statusCode);
       done();

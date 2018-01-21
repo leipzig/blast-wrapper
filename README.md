@@ -1,5 +1,7 @@
 blast-wrapper
 =============
+[![Build Status](https://travis-ci.org/leipzig/blast-wrapper.svg?branch=master)](https://travis-ci.org/leipzig/blast-wrapper)
+
 blast-wrapper is a node.js web-service wrapper for fetching pairwise BLAST or BLAST+ alignments against a fixed reference.
 
 In theory this should be faster than a CGI wrapper.
