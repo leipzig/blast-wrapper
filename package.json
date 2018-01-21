@@ -12,7 +12,7 @@
     "bioinformatics",
     "blast"
   ],
-  "author": "Jeremy Leipzig <leipzig@gmail.com> (http://jermdemo.blogspot.com)",
+  "author": "Jeremy Leipzig <leipzig@gmail.com> (http://github.com/leipzig)",
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/leipzig/blast-wrapper/issues"
