@@ -8,8 +8,7 @@ var config = require(baseDir + '/config.json');
 //this is a node.js wrapper for bl2seq
 //boilerplate code from http://nodejs.org/
 //and http://stackoverflow.com/questions/4295782/how-do-you-extract-post-data-in-node-js
-http.createServer(function(req, res) {
-
+this.server = http.createServer(function(req, res) {
     var queryData = '';
     if (req.method == 'POST') {
         var body = '';
@@ -32,6 +31,16 @@ http.createServer(function(req, res) {
         validate(queryData, res);
     }
 }).listen(config.port);
+
+//this is just for testing benefit
+exports.listen = function () {
+  this.server.listen.apply(this.server, arguments);
+};
+
+exports.close = function (callback) {
+  this.server.close(callback);
+};
+
 
 //the sequence is required, the name isn't
 
