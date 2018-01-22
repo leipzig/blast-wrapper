@@ -5,9 +5,9 @@ var server = require('./server');
 
 //http://taylor.fausak.me/2013/02/17/testing-a-node-js-http-server-with-mocha/
 describe('/', function () {
-  before(function () {
-    server.listen(8080);
-  });
+  //before(function () {
+  //  server.listen(8080);
+  //});
 
   after(function () {
     server.close();
